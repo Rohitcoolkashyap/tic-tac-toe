@@ -7,7 +7,122 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 90%;
+  margin: auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 50px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #538fbe;
+  margin: 3px;
+}
+
+.square:active {
+  background-image: linear-gradient(bottom, rgb(88, 154, 204) 0%, rgb(90, 150, 199) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(88, 154, 204) 0%, rgb(90, 150, 199) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(88, 154, 204) 0%, rgb(90, 150, 199) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(88, 154, 204) 0%, rgb(90, 150, 199) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(88, 154, 204) 0%, rgb(90, 150, 199) 100%);
+
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(88, 154, 204)),
+      color-stop(1, rgb(90, 150, 199)));
+}
+
+
+/* Board */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Game */
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Game Info */
+ul {
+  padding-left: 30px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+li {
+  margin: 10px;
+}
+
+.jumpto {
+  background-color: white;
+  border: blue 1.7px solid;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.jumpto:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+
+.game {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width:1155px) {
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 28px;
+    padding: 0;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #538fbe;
+    margin: 3px;
+  }
 }
