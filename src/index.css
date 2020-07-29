@@ -73,7 +73,7 @@ ul {
 }
 
 .status {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 li {
@@ -118,7 +118,7 @@ li {
     padding: 0;
     text-align: center;
     width: 70px;
-    height: 70px;
+    height: 50px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
